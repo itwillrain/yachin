@@ -15,16 +15,21 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db) {
-   db.createTable('distance_list', {
-    id: {type: 'int', primaryKey: true, autoIncrement: true},
-    name: 'string'
+  return db.createTable('master-option', {
+    op_code: {
+      type: 'int',
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    op_label: {
+      type: 'string',
+      length: 40,
+    }
   });
-  return null;
 };
 
 exports.down = function(db) {
-  db.dropTable('distance_list');
-  return null;
+  return db.dropTable('master-option');
 };
 
 exports._meta = {

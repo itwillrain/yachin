@@ -3,7 +3,8 @@ const app = require('express')()
 const openurl = require('openurl')
 const config =require ('./nuxt.config')
 const PORT = 3000
-require('./server/initDB.js').then(()=> {
+
+require('./server/util/migrateDB.js').then(()=> {
   console.log('db created')
   const api = require ('./server/api/index.js')
 
