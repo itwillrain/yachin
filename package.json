@@ -1,0 +1,40 @@
+{
+  "name": "yachin",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "takeshi_matsushita <>",
+  "private": true,
+  "scripts": {
+    "dev": "env-cmd .devenv node server.js",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dbcreate": "db-migrate create"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "db-migrate": "^0.10.5",
+    "db-migrate-mysql": "^1.1.10",
+    "element-ui": "^2.2.0",
+    "env-cmd": "^7.0.0",
+    "express": "^4.16.2",
+    "nuxt": "^1.0.0",
+    "openurl": "^1.1.1",
+    "quick-mysql": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "coffee-loader": "^0.9.0",
+    "coffee-script": "^1.12.7",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "pug": "2.0.0-beta6",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^6.0.6"
+  }
+}
