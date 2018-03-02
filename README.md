@@ -6,9 +6,9 @@
 
 ##環境変数一覧
 MYSQL_USERNAME=  
-MYSQL_PASSWORD=
-MYSQL_HOST=
-MYSQL_DATABASE=
+MYSQL_PASSWORD=  
+MYSQL_HOST=  
+MYSQL_DATABASE=  
 
 ``` bash
 # install dependencies
